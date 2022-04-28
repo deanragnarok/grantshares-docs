@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'GrantShares',
   tagline: 'A decentralized and transparent grants program for the Neo ecosystem',
-  url: 'https://grantshares.io',
+  url: 'https://docs.grantshares.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
   organizationName: 'AxLabs',
-  projectName: 'GrantShares', 
+  projectName: 'GrantShares',
 
   presets: [
     [
@@ -52,7 +52,11 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   to: 'blog', 
+          //   position: 'left',
+          //   label: 'Blog', 
+          // },
           {
             href: 'https://github.com/axlabs/grantshares',
             label: 'GitHub',

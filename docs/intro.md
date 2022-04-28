@@ -3,5 +3,10 @@ sidebar_position: 1
 ---
 
 # Introduction
+ 
+:::note
 
-## What is the goal of GrantShares?
+This documentation is under construction.
+
+Checkout [grantshares.io](https://grantshares.io)
+:::
