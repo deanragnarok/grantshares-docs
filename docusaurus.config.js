@@ -14,8 +14,9 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
   organizationName: 'AxLabs',
-  projectName: 'GrantShares',
-
+  projectName: 'grantshares-docs',
+  deploymentBranch: 'gh-pages',
+  trailingSlash:false,
   presets: [
     [
       'classic',
