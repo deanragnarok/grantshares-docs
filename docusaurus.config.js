@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'GrantShares',
   tagline: 'A decentralized and transparent grants program for the Neo ecosystem',
-  url: 'https://docs.grantshares.io',
+  url: 'http://docs.grantshares.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
