@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://docs.grantshares.io/blog</id>
+    <id>http://docs.grantshares.io/blog</id>
     <title>GrantShares Blog</title>
     <updated>2022-04-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://docs.grantshares.io/blog"/>
+    <link rel="alternate" href="http://docs.grantshares.io/blog"/>
     <subtitle>GrantShares Blog</subtitle>
-    <icon>https://docs.grantshares.io/img/logo.svg</icon>
+    <icon>http://docs.grantshares.io/img/logo.svg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome to GrantShares]]></title>
         <id>initial-blog-post</id>
-        <link href="https://docs.grantshares.io/blog/initial-blog-post"/>
+        <link href="http://docs.grantshares.io/blog/initial-blog-post"/>
         <updated>2022-04-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Initial blog post.]]></summary>
         <content type="html"><![CDATA[<p>Welcome to this blog</p>]]></content>
