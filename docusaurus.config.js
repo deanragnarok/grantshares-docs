@@ -60,8 +60,8 @@ const config = {
           //   label: 'Blog', 
           // },
           {
-            href: 'https://github.com/axlabs/grantshares',
-            label: 'GitHub',
+            href: 'https://grantshares.io/',
+            label: 'App',
             position: 'right',
           },
         ],
@@ -69,15 +69,15 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Docs',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
           {
             title: 'Community',
             items: [
@@ -92,11 +92,11 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Links',
             items: [
               {
-                label: 'Website',
-                href: 'https://grantshares.io',
+                label: 'GitHub',
+                href: 'https://github.com/axlabs/grantshares',
               },
               {
                 label: 'App',
