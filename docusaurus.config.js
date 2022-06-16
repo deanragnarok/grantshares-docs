@@ -12,17 +12,16 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.svg',
+  favicon: 'img/favicon.ico',
   organizationName: 'AxLabs',
   projectName: 'grantshares-docs',
   deploymentBranch: 'gh-pages',
-  trailingSlash:false,
-  plugins: [],
+  trailingSlash: false,
+  plugins: [ ],
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      '@docusaurus/preset-classic',
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/axlabs/grantshares-docs/tree/main/',
@@ -33,41 +32,60 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
+        }
+      }
+    ]
+  ],
+  themes: [
+    [
+      // Using https://github.com/easyops-cn/docusaurus-search-local for the search bar.
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+        docsDir: "docs", 
+        docsRouteBasePath: "/docs",
+        indexDocs:true,
+        indexPages: true,
+      },
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/logo.svg',
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
-        title: 'GrantShares',
+        title: '',
+        style: 'primary',
         logo: {
           alt: 'GrantShares Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo_and_title.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
-          },
           // {
-          //   to: 'blog', 
+          //   type: 'doc',
+          //   docId: 'General/intro',
           //   position: 'left',
-          //   label: 'Blog', 
+          //   label: 'Docs',
           // },
           {
-            href: 'https://grantshares.io/',
-            label: 'App',
+            href: 'https://grantshares.io/app/proposals',
+            label: 'Application',
             position: 'right',
           },
+          {
+            type: 'search',
+            position: 'right',
+          }
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Community',
@@ -90,8 +108,8 @@ const config = {
                 href: 'https://github.com/axlabs/grantshares',
               },
               {
-                label: 'App',
-                href: 'https://dev.grantshares.io/app/proposals',
+                label: 'Application',
+                href: 'https://grantshares.io/app/proposals',
               },
             ],
           },
