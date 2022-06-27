@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -12,20 +14,26 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.svg',
+  favicon: 'img/favicon.ico',
   organizationName: 'AxLabs',
   projectName: 'grantshares-docs',
   deploymentBranch: 'gh-pages',
-  trailingSlash:false,
-  plugins: [],
+  trailingSlash: false,
+  plugins: [ ],
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      '@docusaurus/preset-classic',
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/axlabs/grantshares-docs/tree/main/',
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
+          exclude: [
+            '**/5_roadmap.md',
+            '**/3_Implementation/*'
+          ],
+
         },
         blog: {
           showReadingTime: true,
@@ -33,41 +41,69 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
+        }
+      }
+    ]
+  ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
+  themes: [
+    [
+      // Using https://github.com/easyops-cn/docusaurus-search-local for the search bar.
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+        docsDir: "docs", 
+        docsRouteBasePath: "/docs",
+        indexDocs:true,
+        indexPages: true,
+      },
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/logo.svg',
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
-        title: 'GrantShares',
+        title: '',
+        style: 'primary',
         logo: {
           alt: 'GrantShares Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo_and_title.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
-          },
           // {
-          //   to: 'blog', 
+          //   type: 'doc',
+          //   docId: 'General/intro',
           //   position: 'left',
-          //   label: 'Blog', 
+          //   label: 'Docs',
           // },
           {
-            href: 'https://grantshares.io/',
-            label: 'App',
+            href: 'https://grantshares.io/app/proposals',
+            label: 'Application',
             position: 'right',
           },
+          {
+            type: 'search',
+            position: 'right',
+          }
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Community',
@@ -90,8 +126,8 @@ const config = {
                 href: 'https://github.com/axlabs/grantshares',
               },
               {
-                label: 'App',
-                href: 'https://dev.grantshares.io/app/proposals',
+                label: 'Application',
+                href: 'https://grantshares.io/app/proposals',
               },
             ],
           },
