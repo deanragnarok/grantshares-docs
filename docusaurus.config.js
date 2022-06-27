@@ -29,6 +29,11 @@ const config = {
           editUrl: 'https://github.com/axlabs/grantshares-docs/tree/main/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          exclude: [
+            '**/5_roadmap.md',
+            '**/3_Implementation/*'
+          ],
+
         },
         blog: {
           showReadingTime: true,

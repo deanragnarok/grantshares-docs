@@ -3,7 +3,7 @@
 
 # Transparency & Security
 
-## Public State & Code 
+## Public State & Public Code 
 
 In GrantShares, all the actions that change state on the blockchain, e.g., token transfers, parameter changes, etc., are
 visible directly on-chain in the GrantShrares contracts. Anyone can verify the history of actions even without using the
@@ -14,12 +14,12 @@ The smart contract code is public and located [here](https://github.com/axlabs/g
 were audited by [Red4Sec](https://red4sec.com/en). The latest tag on the repository is the version that is currently
 deployed on Neo N3 mainnet.
 
-## Decicion Process
+## Decision Process
 
 While voting is restricted to GrantShares members, the proposal discussion is open to everyone. Anyone can read the
 discussions and anyone with a GitHub account can comment. Sure, the members could ignore the community sentiment when
-voting but this would only damage their reputation and credibility (that's why we require members with “skin in the
-game”).
+voting but this would only damage their reputation and credibility (that's why we require members with *skin in the
+game*).
 
 :::note
 Updating the GrantShares contracts without anyone noticing is not possible. Contract code updates
