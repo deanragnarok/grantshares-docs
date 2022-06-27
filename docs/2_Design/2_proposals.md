@@ -3,6 +3,8 @@
 
 # Proposals
 
+## What is a Proposal?
+
 A proposal is an instrument with which anyone can suggest on-chain changes by invocation of one or more smart contract
 methods. 
 Technically speaking, a proposal is a set of method calls on smart contracts, each with a set of parameters. If the
@@ -14,11 +16,17 @@ The method calls of a propsal are called **intents**. I.e., a proposal can consi
 ## Proposal Life Cycle
 
 The following image depicts the states a proposal passes through in its life cycle. Each state is further described
-below.
+below in the [Proposal States](#proposal-states) section.
 
 ![GrantShares diagrams](../img/proposal_state_diagram.svg)
 
-Note, that the time periods $t_r$, $t_v$, $t_l$, and $t_e$ are all parameters that can be changed via proposals. 
+Note, that the time periods $t_r$, $t_v$, $t_l$, and $t_e$ are all parameters that can be changed via proposals. Thus,
+the time it takes for a proposal to go from submission to execution depends on these parameters. Initially the voting
+period is set to 7 days and the time lock to 3 days, so, a proposal can theoretically pass throgh the whole process in
+10 days. In practice, this is not going to happen because of the time spent on proposal discussion before the voting
+starts.
+
+### Proposal States
 
 **Discussion**  
 The proposal was created through the GrantShares web app and is open for discussion. The discussion takes place on 
