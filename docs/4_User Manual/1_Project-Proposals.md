@@ -1,9 +1,9 @@
 ---
 ---
  
-# Tutorial 
+# Proposing a Project
 
-The most important functionality of GrantShrares is explained here: **How to create a successful grant proposal?**
+The most important functionality of GrantShrares is explained here: **How to create a successful project proposal?**
 
 ## Prerequisites
 
