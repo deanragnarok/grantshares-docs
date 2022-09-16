@@ -1,0 +1,11 @@
+# Please adjust to your needs (see https://www.gitpod.io/docs/config-gitpod-file)
+
+tasks:
+  - init: yarn install && yarn run build
+    command: yarn run start
+
+ports:
+  - name: Docs Dev Web App
+    description: Docusaurus web application
+    port: 3000
+    onOpen: open-browser
