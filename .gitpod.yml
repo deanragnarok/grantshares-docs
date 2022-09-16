@@ -1,7 +1,7 @@
 # Please adjust to your needs (see https://www.gitpod.io/docs/config-gitpod-file)
 
 tasks:
-  - init: yarn install && yarn run build
+  - init: yarn install
     command: yarn run start
 
 ports:
