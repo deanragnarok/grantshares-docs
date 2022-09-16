@@ -1,27 +1,44 @@
 # Grantshares Docs
 
-External documentation of the GrantShares program app and smart contracts
+External documentation of the GrantShares program app and smart contracts.
 
 This documentation site is built using [Docusaurus 2](https://docusaurus.io/).
 
-### Installation
+## Requirements
 
+The Docusaurus versioned used in this repo requires a node.js installation of at least version 16.14. Node is available [here](https://nodejs.org/en/download/).
+
+If you already have node installed use the Node Version Manager command line tool to install the required version (e.g., `nvm install 16.14`) or switch to it (e.g., `nvm use 16.14`).
+
+You will also need Yarn, which you can install after you've installed node.
+```bash
+npm install --global yarn
+```
+
+## Development
+
+Clone this repository.
+```
+git clone https://github.com/AxLabs/grantshares-docs.git
+cd grantshares-docs
+```
+
+Install the dependencies.
 ```
 $ yarn install
 ```
 
-### Local Development
-
+Build the docs website and run a local dev server. The docs are served at http://localhost:3000/. Most changes in the source code are reflected live without having to restart the server.
 ```
 $ yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
 
+## Build Static Site
+
+Generate static content into the `build` directory that can be served using any static contents hosting service.
 ```
 $ yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
