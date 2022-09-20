@@ -2,6 +2,8 @@
 ---
 
 # Introduction
+
+Another line.
  
 GrantShares is a community-driven grants program governed by the GrantShares DAO (Decentralized Autonomous
 Organization), with the goal of fostering independent projects in the Neo ecosystem. The program is an extension of the
