@@ -3,8 +3,6 @@
 
 # Grants Categories
 
-add something here
-
 There are three main spending categories:
 
 1. Community Growth
