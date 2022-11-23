@@ -31,7 +31,7 @@ starts.
 **Discussion**  
 The proposal was created through the GrantShares web app and is open for discussion. The discussion takes place on 
 GitHub. An issue is automatically created for the proposal by the GrantShares backend. The proposal is not yet on-chain.
-The proposer did not have to spend anygas so far.
+The proposer can still modify the proposal via the web app.
 
 **Cancelled**  
 The proposal was cancelled by the proposer before it was put on-chain. The corresponding GitHub issue is closed by the
