@@ -40,8 +40,12 @@ the receiving address field will be filled with your wallet address automaticall
 Now, click on *"Submit Proposal"*. If you are logged-in with GitHub and all fields are correctly filled, you're proposal
 will now be created. You will get redirected, and you'll see two links. One leads to the proposal details in the web
 app, and the other to the issue on GitHub where the discussion will take place. Make sure to follow the discussion on
-GitHub closely. Feel free spread the information about your proposal on other channels, e.g., the Neo Discord channel.
-Note that the proposal is not yet on-chain.
+GitHub closely. Feel free to spread the information about your proposal on other channels, e.g., the Neo Discord
+channel. 
+
+Note that the proposal is not yet on-chain. You can still edit it when you're logged in with the same GitHub you created
+it with. To do so, go to the proposal details page and click on the *"Edit Proposal"* button. 
+
 
 ### A Note on Discussions
 
