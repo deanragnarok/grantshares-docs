@@ -32,9 +32,30 @@ const config = {
           rehypePlugins: [katex],
           exclude: [
             '**/5_roadmap.md',
-            '**/3_Implementation/*'
+            '**/3_Implementation/*',
           ],
-
+          // While the `exclude` above excludes from the docusaurus build in general,
+          // the `sidebarItemsGenerator` below allows us to create a custom function to include/exclude
+          // from the sidebar.
+          sidebarItemsGenerator: async function ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            const newItems = sidebarItems.filter((item) => {
+              const newSubItems = item.items.filter((item) => {
+                console.log("Item: ", item);
+                // remove an item with a specific label 'rfp-docs' if the item is not null and the item has a label
+                return item.label !== 'rfp-docs';
+              });
+              item.items = newSubItems;
+              return item;
+            });
+            newItems.forEach((item) => {
+              console.log("New Item: ", item);
+            });
+            return newItems
+          }
         },
         blog: {
           showReadingTime: true,
