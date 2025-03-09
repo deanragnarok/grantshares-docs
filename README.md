@@ -2,13 +2,13 @@
 
 External documentation of the GrantShares program app and smart contracts.
 
-This documentation site is built using [Docusaurus 2](https://docusaurus.io/).
+This documentation site is built using [Docusaurus 3](https://docusaurus.io/).
 
 ## Requirements
 
-The Docusaurus versioned used in this repo requires a node.js installation of at least version 16.14. Node is available [here](https://nodejs.org/en/download/).
+The Docusaurus versioned used in this repo requires a node.js installation of at least version 18. Node is available [here](https://nodejs.org/en/download/).
 
-If you already have node installed use the Node Version Manager command line tool to install the required version (e.g., `nvm install 16.14`) or switch to it (e.g., `nvm use 16.14`).
+If you already have node installed use the Node Version Manager command line tool to install the required version (e.g., `nvm install 18`) or switch to it (e.g., `nvm use 18`).
 
 You will also need Yarn, which you can install after you've installed node.
 ```bash
