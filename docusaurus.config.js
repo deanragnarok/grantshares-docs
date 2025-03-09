@@ -44,15 +44,11 @@ const config = {
             const sidebarItems = await defaultSidebarItemsGenerator(args);
             const newItems = sidebarItems.filter((item) => {
               const newSubItems = item.items.filter((item) => {
-                console.log("Item: ", item);
                 // remove an item with a specific label 'rfp-docs' if the item is not null and the item has a label
                 return item.label !== 'rfp-docs';
               });
               item.items = newSubItems;
               return item;
-            });
-            newItems.forEach((item) => {
-              console.log("New Item: ", item);
             });
             return newItems
           }
