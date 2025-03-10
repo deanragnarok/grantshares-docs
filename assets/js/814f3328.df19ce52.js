@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgrantshares_docs=self.webpackChunkgrantshares_docs||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to GrantShares","permalink":"/blog/initial-blog-post","unlisted":false,"date":"2022-04-29T00:00:00.000Z"}]}')}}]);

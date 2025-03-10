@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgrantshares_docs=self.webpackChunkgrantshares_docs||[]).push([[634],{9179:(s,r,e)=>{e.r(r),e.d(r,{default:()=>t});e(6540);var a=e(6347),n=e(4848);function t(){return(0,n.jsx)(a.rd,{to:"/docs/General/intro"})}}}]);

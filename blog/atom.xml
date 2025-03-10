@@ -9,7 +9,7 @@
     <icon>https://docs.grantshares.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome to GrantShares]]></title>
-        <id>initial-blog-post</id>
+        <id>https://docs.grantshares.io/blog/initial-blog-post</id>
         <link href="https://docs.grantshares.io/blog/initial-blog-post"/>
         <updated>2022-04-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Initial blog post.]]></summary>
