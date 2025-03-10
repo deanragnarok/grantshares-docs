@@ -20,9 +20,9 @@ Request for Proposals (RFPs) are formal documents that outline specific needs or
 
 Below is a comprehensive list of all RFPs, both active and completed. New RFPs are added at the top of the list:
 
-| RFP ID | Short Title              | Published at | Submissions By | Status | Links |
-|--------|--------------------------|--------------|----------------|--------|-------|
-| GS-001 | Call for New DAO Members | 10 Mar 2025  | 23 Mar 2025    | 🟢     | [RFP Document](rfp-docs/gs-001) | 
+| RFP ID | Short Title              | Published at | Submissions By | Status |
+|--------|--------------------------|--------------|----------------|--------|
+| [GS-001](rfp-docs/gs-001) | Call for New DAO Members | 10 Mar 2025  | 23 Mar 2025    | 🟢     |
 
 Status Legend:
 - 🟢 Open for Submissions
