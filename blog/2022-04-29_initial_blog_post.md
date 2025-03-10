@@ -6,3 +6,5 @@ authors: csmuller
 ---
 
 Welcome to this blog
+
+<!--truncate-->

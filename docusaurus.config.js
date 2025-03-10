@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
@@ -31,9 +32,26 @@ const config = {
           rehypePlugins: [katex],
           exclude: [
             '**/5_roadmap.md',
-            '**/3_Implementation/*'
+            '**/3_Implementation/*',
           ],
-
+          // While the `exclude` above excludes from the docusaurus build in general,
+          // the `sidebarItemsGenerator` below allows us to create a custom function to include/exclude
+          // from the sidebar.
+          sidebarItemsGenerator: async function ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            const newItems = sidebarItems.filter((item) => {
+              const newSubItems = item.items.filter((item) => {
+                // remove an item with a specific label 'rfp-docs' if the item is not null and the item has a label
+                return item.label !== 'rfp-docs';
+              });
+              item.items = newSubItems;
+              return item;
+            });
+            return newItems
+          }
         },
         blog: {
           showReadingTime: true,
@@ -60,11 +78,11 @@ const config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
-        language: ["en"],
         docsDir: "docs", 
         docsRouteBasePath: "/docs",
         indexDocs:true,
         indexPages: true,
+        highlightSearchTermsOnTargetPage: true,
       },
     ],
   ],
