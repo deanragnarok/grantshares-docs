@@ -14,7 +14,10 @@
       ]
     }
   },
-  "postCreateCommand": "npm install",
+  "postCreateCommand": [
+    "yarn install",
+    "yarn start"
+  ],
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
